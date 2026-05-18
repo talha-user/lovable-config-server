@@ -8,3 +8,18 @@ spring:
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
+  ai:
+    openai:
+      api-key: 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
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: openai/gpt-oss-120b:free
+          temperature: 0.0
+    retry:
+      max-attempts: 5
+      on-http-codes: 429
+      backoff:
+        initial-interval: 2s
+        multiplier: 2
+        max-interval: 10s
