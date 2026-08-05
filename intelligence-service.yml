@@ -14,7 +14,7 @@ spring:
       base-url: https://openrouter.ai/api/v1
       chat:
         options:
-          model: nvidia/nemotron-3-ultra-550b-a55b:free
+          model: openai/gpt-oss-20b:free
           temperature: 0.0
     retry:
       max-attempts: 5
